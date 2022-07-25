@@ -10,12 +10,16 @@ const GlobalStyles = createGlobalStyle`
     }
     body {
         margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, 'Open Sans',
+        font-family:  'Open Sans',
           sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        background: ${props => props.theme.colors.mainBgColor};
+     
     }
+
+    html {
+scroll-behavior: smooth;
+}
     p {
       margin: 0;
       padding: 0;
@@ -25,6 +29,9 @@ const GlobalStyles = createGlobalStyle`
       border: none;
       margin: 0;
       padding: 0;
+    }
+    img{
+      display:block;
     }
     ul {
       list-style: none;
