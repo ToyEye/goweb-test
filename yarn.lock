@@ -5876,6 +5876,11 @@ levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
+lightbox2@^2.11.3:
+  version "2.11.3"
+  resolved "https://registry.yarnpkg.com/lightbox2/-/lightbox2-2.11.3.tgz#057d9244badb0f0fd4603c25d739a19a85a71978"
+  integrity sha512-Q4v6il/OK9ttgEkAxSok/jrI/LUbqTrePFchqP2x/59qaDIZgJjEEc5Xf7peSMc/55Zo5PAgmX6EiN/BeEeUBQ==
+
 lilconfig@^2.0.3, lilconfig@^2.0.5:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/lilconfig/-/lilconfig-2.0.6.tgz#32a384558bd58af3d4c6e077dd1ad1d397bc69d4"

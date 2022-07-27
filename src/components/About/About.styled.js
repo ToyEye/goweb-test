@@ -8,11 +8,27 @@ const AboutContainer = styled.div`
 
   ${media.tablet} {
     flex-direction: row;
+    width: 768px;
+  }
+
+  ${media.desctop} {
+    width: 1360px;
   }
 `;
 const PictureContainer = styled.div`
-  img {
-    width: 100%;
+  ${media.tablet} {
+    width: 368px;
+    img {
+      object-fit: cover;
+      height: 589px;
+    }
+  }
+
+  ${media.desctop} {
+    width: 670px;
+    img {
+      height: 460px;
+    }
   }
 `;
 

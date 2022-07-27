@@ -147,6 +147,10 @@ const ListStyled = styled.ul`
             width: 35px;
             height: 35px;
             fill: white;
+
+            :hover {
+              opacity: 0.8;
+            }
           }
         }
       }

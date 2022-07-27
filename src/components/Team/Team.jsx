@@ -2,7 +2,7 @@ import React from 'react';
 import { FaFacebook, FaLinkedinIn } from 'react-icons/fa';
 import { BsTwitter, BsYoutube } from 'react-icons/bs';
 import contactsInfo from './contactsInfo';
-import { TeamContainer, ListStyled } from './Contacts.styled';
+import { TeamContainer, ListStyled } from './Team.styled';
 
 const Contacts = () => {
   return (

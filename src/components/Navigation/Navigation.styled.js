@@ -1,11 +1,39 @@
 import styled from 'styled-components';
 import media from 'helpers/mediaHelper';
 
-const NavigationContainer = styled.div`
+const NavigationContainer = styled.header`
+  position: absolute;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100%;
+  height: 120px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
   ${media.tablet} {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding-left: 32px;
+    padding-right: 32px;
+    width: 768px;
+    height: 70px;
+
+    .navigationContainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  ${media.desctop} {
+    padding-left: 28px;
+    padding-right: 28px;
+    width: 1360px;
   }
 `;
 

@@ -7,6 +7,9 @@ const theme = {
     lightColor: '#FFFFFF',
     darkColor: ' #333333',
     btnHoverOpacity: 'rgba(40, 167, 69, 0.9)',
+    formBgC: '#F4F4F4',
+    error: 'red',
+    placeholderColor: '#808080',
   },
   weights: {
     light: 300,

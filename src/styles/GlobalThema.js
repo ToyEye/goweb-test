@@ -31,6 +31,7 @@ scroll-behavior: smooth;
       padding: 0;
     }
     img{
+    width: 100%;
       display:block;
     }
     ul {
@@ -67,6 +68,12 @@ scroll-behavior: smooth;
     ::-webkit-scrollbar {
       width: 5px;
     }
+      .navigationContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
     /* transitions */
     .modal-enter {
       opacity: 0;
@@ -82,6 +89,7 @@ scroll-behavior: smooth;
       opacity: 0;
       transition: opacity 300ms linear;
     }
+
 `;
 
 export default GlobalStyles;

@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import media from 'helpers/mediaHelper';
 
 const TextContainer = styled.div`
-  img {
-    width: 320px;
+  ${media.tablet} {
+    width: 768px;
+  }
+  ${media.desctop} {
+    width: 1360px;
   }
 `;
 
@@ -18,19 +21,19 @@ const Text = styled.div`
   .text {
     font-size: 18px;
     line-height: 1.66;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   }
   .solutions {
     font-size: 38px;
     line-height: 1.26;
     font-weight: ${props => props.theme.weights.light};
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   .about {
     font-size: 16px;
     line-height: 1.6;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   button {
@@ -46,9 +49,9 @@ const Text = styled.div`
   }
 
   ${media.tablet} {
-    padding-left: 32px;
-    padding-right: 32px;
-
+    padding: 40px 70px 40px 32px;
+    width: 400px;
+    height: 589px;
     .text {
       font-size: 20px;
     }
@@ -64,6 +67,8 @@ const Text = styled.div`
 
   ${media.desctop} {
     padding: 80px 64px 80px 20px;
+    width: 690px;
+    height: 460px;
   }
 `;
 

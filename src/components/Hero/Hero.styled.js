@@ -21,7 +21,7 @@ const HeroContainer = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 96px;
-  padding-top: 20px;
+  padding-top: 142px;
   padding-left: 22px;
   padding-right: 22px;
 
@@ -58,7 +58,9 @@ const MainStyled = styled.div`
   color: ${props => props.theme.colors.titleColor};
   padding-left: 37px;
   padding-right: 37px;
-
+  .arrow {
+    display: none;
+  }
   .title {
     font-weight: ${props => props.theme.weights.light};
     font-size: 52px;
@@ -84,6 +86,15 @@ const MainStyled = styled.div`
   ${media.tablet} {
     margin-top: 350px;
 
+    .button {
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+    }
+    .arrow {
+      display: block;
+      width: 16px;
+    }
     .title {
       font-size: 55px;
     }
