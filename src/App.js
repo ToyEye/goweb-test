@@ -1,5 +1,7 @@
 import './js/lightbox-plus-jquery.min';
 import './styles/css/lightbox.css';
+
+import { Toaster } from 'react-hot-toast';
 import { Container } from 'components/reusableComponents';
 import Navigation from 'components/Navigation';
 import Hero from 'components/Hero';
@@ -13,6 +15,7 @@ import Footer from 'components/Footer';
 function App() {
   return (
     <Container>
+      <Toaster />
       <Navigation />
       <Hero />
       <About />

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from 'images/fa-solid_book-open.png';
 import {
   NavigationContainer,
@@ -7,22 +7,28 @@ import {
 } from './Navigation.styled';
 
 const Navigation = () => {
-  window.onscroll = () => {
-    const scroll = document.querySelector('.header');
-    const Y = window.scrollY;
-    if (
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-        navigator.userAgent && Y > 120
-      )
-    ) {
-      scroll.classList.add('fixed');
-    } else {
-      scroll.classList.add('fixed');
-    }
-  };
+  const [scroll, setScroll] = useState(false);
+
+  useEffect(() => {
+    window.onscroll = () => {
+      const Y = window.scrollY;
+      if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        ) &&
+        Y > 125
+      ) {
+        setScroll(Y > 125);
+      } else if (Y > 70) {
+        setScroll(true);
+      } else {
+        setScroll(false);
+      }
+    };
+  }, []);
 
   return (
-    <NavigationContainer className="header">
+    <NavigationContainer className="header" scroll={scroll}>
       <div className="navigationContainer">
         <LogoContainer>
           <img className="img" src={logo} alt="logo" />

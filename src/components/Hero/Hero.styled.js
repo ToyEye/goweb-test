@@ -6,19 +6,6 @@ import showcaseWebpSecond from '../../images/home/showcase@2x.webp';
 import media from 'helpers/mediaHelper';
 
 const HeroContainer = styled.div`
-  /* .webp {
-    background-image: url(../../images/home/showcase.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: auto;
-    margin-left: auto;
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url(../../images/home/showcase@2x.webp);
-    }
-  } */
 
   margin-right: auto;
   margin-left: auto;

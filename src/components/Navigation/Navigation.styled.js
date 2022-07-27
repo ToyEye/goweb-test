@@ -2,20 +2,19 @@ import styled from 'styled-components';
 import media from 'helpers/mediaHelper';
 
 const NavigationContainer = styled.header`
-  position: absolute;
+  ${props =>
+    props.scroll
+      ? `position:fixed; top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);`
+      : 'position: absolute;'}
+
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
   height: 120px;
   left: 50%;
   transform: translateX(-50%);
-
-  .fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-  }
 
   ${media.tablet} {
     padding-left: 32px;

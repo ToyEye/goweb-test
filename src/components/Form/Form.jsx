@@ -1,4 +1,5 @@
 import React from 'react';
+import toast from 'react-hot-toast';
 import { useFormik } from 'formik';
 import contactSchema from 'model/contactSchema';
 import guyJpg from 'images/home/contact.jpg';
@@ -16,7 +17,7 @@ const initialValues = {
 
 const Form = () => {
   const onSubmit = () => {
-    console.log('click');
+    toast.success('Your contacts send');
     formik.resetForm();
   };
 
