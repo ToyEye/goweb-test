@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 import showcaseJpgOne from '../../images/home/showcase.jpg';
 import showcaseJpgSecond from '../../images/home/showcase@2x.jpg';
+import showcaseWebpOne from '../../images/home/showcase.webp';
+import showcaseWebpSecond from '../../images/home/showcase@2x.webp';
 import media from 'helpers/mediaHelper';
 
 const HeroContainer = styled.div`
@@ -25,18 +27,29 @@ const HeroContainer = styled.div`
   padding-left: 22px;
   padding-right: 22px;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${showcaseJpgOne});
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    image-set(
+      url(${showcaseWebpSecond}) 2x,
+      url(${showcaseWebpOne}) 1x,
+      url(${showcaseJpgSecond}) 2x,
+      url(${showcaseJpgOne}) 1x
+    );
+
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    -webkit-image-set(url(${showcaseWebpSecond}) 2x, url(${showcaseWebpOne}) 1x, url(${showcaseJpgSecond})
+          2x, url(${showcaseJpgOne}) 1x);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-      url(${showcaseJpgSecond});
-  }
 
   ${media.tablet} {
     padding-left: 32px;

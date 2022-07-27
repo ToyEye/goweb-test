@@ -1,3 +1,5 @@
+import './js/lightbox-plus-jquery.min';
+import './styles/css/lightbox.css';
 import { Container } from 'components/reusableComponents';
 import Navigation from 'components/Navigation';
 import Hero from 'components/Hero';

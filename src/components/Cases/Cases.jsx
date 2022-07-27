@@ -20,7 +20,7 @@ const Cases = () => {
                 data-title="Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto,
         sapiente!"
               >
-                {/* <picture>
+                <picture>
                   <source
                     srcSet={`${caseWeb} 1x, ${caseWebX} 2x`}
                     type="image/webp"
@@ -28,9 +28,9 @@ const Cases = () => {
                   <source
                     srcSet={`${caseJpg} 1x, ${caseJpgx} 2x,`}
                     type="image/jpeg"
-                  /> */}
-                <img src={caseJpg} alt="about" />
-                {/* </picture> */}
+                  />
+                  <img src={caseJpg} alt="about" />
+                </picture>
               </a>
             </li>
           ))}
