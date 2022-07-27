@@ -8,7 +8,6 @@ const NavigationContainer = styled.header`
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);`
       : 'position: absolute;'}
-
   padding-left: 24px;
   padding-right: 24px;
   width: 100%;
@@ -100,7 +99,7 @@ const ListContainer = styled.ul`
 
   ${media.tablet} {
     li {
-      margin-right: 20px;
+      margin-right: 15px;
       :last-child {
         margin-right: 0;
       }
